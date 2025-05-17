@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>Run Calculator</title>
+  <hta:application id="calcApp" />
+  <script type="text/javascript">
+    function runCalculator() {
+      var shell = new ActiveXObject("WScript.Shell");
+      shell.Run("calc.exe");
+      window.close(); // Optional: close the HTA after launching calculator
+    }
+  </script>
+</head>
+<body onload="runCalculator()">
+  <h3>Launching Calculator...</h3>
+</body>
+</html>
